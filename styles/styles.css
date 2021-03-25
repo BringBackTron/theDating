@@ -1,0 +1,45 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+    padding: 30px;
+}
+
+.main-img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 25px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.quote {
+    font-style: italic;
+    margin-left: 30px;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
