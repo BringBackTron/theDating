@@ -1,3 +1,8 @@
+<!--
+George McMullen
+March 26 2021
+Dating home page
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,17 +43,23 @@
         </div>
         <div class="column">
 
-    <img src="images/person.png">
+    <div class="container img-container">
+        <img src="images/person.png">
+    </div>
 
     <h4>Biography</h4>
-    <p>{{ @SESSION.biography }}</p>
+    <p class="biotext">{{ @SESSION.biography }}</p>
 
         </div>
     </div>
 
-    <div class="">
+    <br>
+
+    <div class="container button-container">
         <input class="form-control contact-button btn btn-primary" type="button" value="Contact Me!">
     </div>
+
+    <br>
 
 </div>
 

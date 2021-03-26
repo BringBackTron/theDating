@@ -1,8 +1,10 @@
 .contact-button {
-    float: right;
-    display: inline;
     width: 100px;
-    margin: 10px;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .summary-container {
@@ -10,6 +12,7 @@
     border-width: 2px;
     border-color: #eee;
     border-radius: 8px;
+    max-width: 700px
 }
 
 .bordered {
@@ -21,4 +24,18 @@
 
 .entry {
     margin: 0px 0px 0px 15px;
+}
+
+.column {
+    float: left;
+    width: 47%;
+    margin: 10px;
+}
+
+img {
+    height: auto;
+}
+
+.biotext {
+    margin: 0px 0px 10px 0px;
 }
