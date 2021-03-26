@@ -19,6 +19,10 @@
 </nav>
 
 <div class="summary-container container">
+
+    <div class="row">
+        <div class="column">
+
     <br>
     <div class="bordered"><br>
     <p class="entry">Name: {{ @SESSION.fName }} {{ @SESSION.lName }}</p><hr>
@@ -31,10 +35,16 @@
     <p class="entry">Interests: {{ @SESSION.indoor }}, {{ @SESSION.outdoor }}</p><br>
     </div>
 
+        </div>
+        <div class="column">
+
     <img src="images/person.png">
 
     <h4>Biography</h4>
     <p>{{ @SESSION.biography }}</p>
+
+        </div>
+    </div>
 
     <div class="">
         <input class="form-control contact-button btn btn-primary" type="button" value="Contact Me!">
