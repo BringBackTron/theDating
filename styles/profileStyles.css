@@ -1,0 +1,36 @@
+.next-button {
+    float: right;
+    display: inline;
+    width: 65px;
+    margin: 10px;
+}
+
+.profile-container {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #eee;
+    border-radius: 8px;
+}
+
+.textarea {
+    resize: both;
+    max-width: 100%;
+    max-height: 300px;
+    width: 10000px;
+    min-height: 125px;
+    outline: none;
+}
+
+.textarea-container {
+
+}
+
+.form-control {
+
+}
+
+.column {
+    float: left;
+    width: 47%;
+    margin: 10px;
+}

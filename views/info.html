@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Info</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/infoStyles.css">
+</head>
+<body>
+
+<!-- Nav bar -->
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="../theDating">My Dating Website</a>
+        </div>
+    </div>
+</nav>
+
+<div class="info-container container">
+    <h1>Personal Information</h1>
+
+    <p class="privacypolicy"><b>Note: </b>All information will be sold to Mark Zuckerburg. You can read this <a href="">privacy policy</a> that our hundreds of lawyers wrote, but you'd be wasting your time.</p>
+
+    <form action="profile" method="post" class="">
+
+        <div class="form-group">
+            <label for="fName" class="control-label">
+                First Name
+                <input class="form-control" type="text" name="fName" id="fName">
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label for="lName" class="control-label">
+                Last Name
+                <input class="form-control" type="text" name="lName" id="lName">
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label for="age" class="control-label">
+                Age
+                <input class="form-control" type="text" name="age" id="age">
+            </label>
+        </div>
+
+        <div>
+                <b>Gender</b><br>
+                <input type="radio" id="male" name="male" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="female" value="female">
+                <label for="female">Female</label>
+        </div>
+
+        <div class="form-group">
+            <label for="phonenumber" class="control-label">
+                Phone Number
+                <input class="form-control" type="text" name="phonenumber" id="phonenumber">
+            </label>
+        </div>
+
+        <div class="">
+            <input class="form-control next-button btn btn-primary" type="submit" value="Next >">
+        </div>
+    </form>
+</div>
+</body>
+</html>

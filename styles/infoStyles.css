@@ -1,0 +1,29 @@
+.info-container {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #eee;
+    border-radius: 8px;
+}
+
+.next-button {
+    float: right;
+    display: inline;
+    width: 65px;
+    margin: 10px;
+}
+
+.privacypolicy {
+    float: right;
+    display: inline;
+    max-width: 300px;
+    text-align: center;
+    margin: 10px;
+    border-style: solid;
+    border-color: #eee;
+    border-radius: 8px;
+    background: seashell;
+}
+
+.control-label {
+    width: 55%
+}

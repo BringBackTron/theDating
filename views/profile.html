@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="styles/profileStyles.css">
+</head>
+<body>
+
+<!-- Nav bar -->
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="../theDating">My Dating Website</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container profile-container">
+
+    <h1>Profile</h1>
+
+    <div class="row">
+        <div class="column">
+
+            <div class="form-group">
+                <label for="email" class="control-label">Email</label>
+                <div>
+                    <input class="form-control" type="text" name="email" id="email">
+                </div>
+            </div>
+
+            <div>
+                <label for="state" class="control-label">State</label>
+                <select class="form-control" name="state" id="state">
+                    <option> -- Select a state --</option>
+                    <option>Washington</option>
+                    <option>Not Washington</option>
+                </select>
+            </div>
+            <br>
+
+            <div>
+                <b>Seeking</b><br>
+                <input type="radio" id="male" name="size" value="male" >
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="size" value="female" >
+                <label for="female">Female</label>
+            </div>
+
+        </div>
+        <div class="column">
+
+            <div class="textarea-container">
+                <label for="biography" class="control-label">Biography</label>
+                    <textarea class="form-control textarea" name="biography" id="biography"></textarea>
+            </div>
+
+            <div class="">
+                <input class="form-control next-button btn btn-primary" type="submit" value="Next >">
+            </div>
+
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

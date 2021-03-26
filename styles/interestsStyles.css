@@ -1,0 +1,19 @@
+.next-button {
+    float: right;
+    display: inline;
+    width: 65px;
+    margin: 10px;
+}
+
+.column {
+    float: left;
+    width: 21%;
+    margin: 0px 0px 0px 30px;
+}
+
+.interests-container {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #eee;
+    border-radius: 8px;
+}
