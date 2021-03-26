@@ -11,6 +11,9 @@ error_reporting(E_ALL);
 //require autoload file
 require_once("vendor/autoload.php");
 
+// Start a session
+session_start();
+
 //create an instance of the base class
 $f3 = Base::instance();
 
@@ -26,6 +29,8 @@ $f3->route('GET /', function(){
 
 //Define an order route
 $f3->route('GET|POST /info', function($f3) {
+    //var_dump($_POST);
+
     // Display a view
     $view = new Template();
     echo $view->render("views/info.html");
@@ -33,6 +38,25 @@ $f3->route('GET|POST /info', function($f3) {
 
 //Define an order2 route
 $f3->route('POST /profile', function($f3) {
+    //var_dump($_POST);
+
+    // Add data from form1 to Session array
+    if (isset($_POST['fName'])) {
+        $_SESSION['fName'] = $_POST['fName'];
+    }
+    if (isset($_POST['lName'])) {
+        $_SESSION['lName'] = $_POST['lName'];
+    }
+    if (isset($_POST['age'])) {
+        $_SESSION['age'] = $_POST['age'];
+    }
+    if (isset($_POST['gender'])) {
+        $_SESSION['gender'] = $_POST['gender'];
+    }
+    if (isset($_POST['phonenumber'])) {
+        $_SESSION['phonenumber'] = $_POST['phonenumber'];
+    }
+
     // Display a view
     $view = new Template();
     echo $view->render("views/profile.html");
@@ -40,6 +64,21 @@ $f3->route('POST /profile', function($f3) {
 
 //Define an order2 route
 $f3->route('POST /interests', function($f3) {
+    //var_dump($_POST);
+
+    if (isset($_POST['email'])) {
+        $_SESSION['email'] = $_POST['email'];
+    }
+    if (isset($_POST['state'])) {
+        $_SESSION['state'] = $_POST['state'];
+    }
+    if (isset($_POST['sgender'])) {
+        $_SESSION['sgender'] = $_POST['sgender'];
+    }
+    if (isset($_POST['biography'])) {
+        $_SESSION['biography'] = $_POST['biography'];
+    }
+
     // Display a view
     $view = new Template();
     echo $view->render("views/interests.html");
@@ -47,18 +86,13 @@ $f3->route('POST /interests', function($f3) {
 
 //Define a summary route
 $f3->route('POST /summary', function() {
+
+    $_SESSION['indoor'] = implode(", ", $_POST['indoor']);
+    $_SESSION['outdoor'] = implode(", ", $_POST['outdoor']);
+
     //var_dump($_POST);
-    //echo "<br>";
 
-    /* Add data from form2 to Session array
-    if (!empty($_POST['name'])) {
-        $_SESSION['name'] = $_POST['name'];
-    }
-    $_SESSION['size'] = $_POST['size'];
-    $_SESSION['accessories'] = implode(", ", $_POST['accessories']);
     //var_dump($_SESSION);
-
-    */
 
     // Display a view
     $view = new Template();

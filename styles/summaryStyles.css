@@ -1,6 +1,24 @@
-.next-button {
+.contact-button {
     float: right;
     display: inline;
-    width: 65px;
+    width: 100px;
     margin: 10px;
+}
+
+.summary-container {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #eee;
+    border-radius: 8px;
+}
+
+.bordered {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #eee;
+    border-radius: 8px;
+}
+
+.entry {
+    margin: 0px 0px 0px 15px;
 }

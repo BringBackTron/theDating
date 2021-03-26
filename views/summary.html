@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
 
+    <meta charset="UTF-8">
+    <title>Summary</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" >
     <link rel="stylesheet" href="styles/summaryStyles.css">
 </head>
 <body>
+
+<!-- Nav bar -->
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="../theDating">My Dating Website</a>
+        </div>
+    </div>
+</nav>
+
+<div class="summary-container container">
+    <br>
+    <div class="bordered"><br>
+    <p class="entry">Name: {{ @SESSION.fName }} {{ @SESSION.lName }}</p><hr>
+    <p class="entry">Gender: {{ @SESSION.gender }}</p><hr>
+    <p class="entry">Age: {{ @SESSION.age }}</p><hr>
+    <p class="entry">Phone: {{ @SESSION.phonenumber }}</p><hr>
+    <p class="entry">Email: {{ @SESSION.email }}</p><hr>
+    <p class="entry">State: {{ @SESSION.state }}</p><hr>
+    <p class="entry">Seeking: {{ @SESSION.sgender }}</p><hr>
+    <p class="entry">Interests: {{ @SESSION.indoor }}, {{ @SESSION.outdoor }}</p><br>
+    </div>
+
+    <img src="images/person.png">
+
+    <h4>Biography</h4>
+    <p>{{ @SESSION.biography }}</p>
+
+    <div class="">
+        <input class="form-control contact-button btn btn-primary" type="button" value="Contact Me!">
+    </div>
+
+</div>
 
 </body>
 </html>
