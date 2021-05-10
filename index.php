@@ -87,12 +87,12 @@ $f3->route('POST /interests', function($f3) {
 //Define a summary route
 $f3->route('POST /summary', function() {
 
-    $_SESSION['indoor'] = implode(", ", $_POST['indoor']);
-    $_SESSION['outdoor'] = implode(", ", $_POST['outdoor']);
-
     //var_dump($_POST);
 
     //var_dump($_SESSION);
+
+    $_SESSION['indoor'] = implode(", ", $_POST['indoor']);
+    $_SESSION['outdoor'] = implode(", ", $_POST['outdoor']);
 
     // Display a view
     $view = new Template();
